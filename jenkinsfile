@@ -1,8 +1,4 @@
 node{
-   stage ('downloading the git'){
-
-      git credentialsId: 'meris', url: 'https://github.com/mershajr/Maven-student.git'
-    }
     stage ('cleaning the old artifacts'){
      sh label: '', script: 'mvn clean'
     }
